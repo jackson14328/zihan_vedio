@@ -1,0 +1,76 @@
+/* 基本样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* 页面容器 */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* 头部样式，添加背景 */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 56.25%; /* 16:9 比例，56.25% = 9 ÷ 16 * 100 */
+    padding-left: 20px;
+    padding-right: 20px;
+    background: url('header-background.jpg') no-repeat center center;
+    background-size: cover; /* 背景图片覆盖整个区域 */
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* 用于定位内嵌的内容 */
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em; /* 可根据需求调整 */
+}
+
+
+/* 头部标题样式 */
+h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+/* 视频区域样式 */
+.video-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* 每个视频项 */
+.video-item {
+    width: 48%;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 视频标题 */
+.video-item h2 {
+    text-align: center;
+    color: #444;
+}
+
+/* 视频样式 */
+video {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 400px;
+}
